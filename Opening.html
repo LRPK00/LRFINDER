@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    text-align: center;
+  }
+  #exitButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- Firebase Analytics SDK -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD31_bGDPdLTlCJTYHuWV7E4wrOeWY0Jw4",
+    authDomain: "lr-finder.firebaseapp.com",
+    projectId: "lr-finder",
+    storageBucket: "lr-finder.appspot.com",
+    messagingSenderId: "65765507199",
+    appId: "1:65765507199:web:18c6670d658bf57b343f4a",
+    measurementId: "G-PBXML621JH"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- End Firebase Analytics SDK -->
+
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to LR Finder!</h1>
+  <p>This page will automatically redirect you in <span id="countdown">60</span> seconds.</p>
+  <button id="exitButton">Exit</button>
+</div>
+
+<script>
+  // Countdown timer
+  var seconds = 60;
+  var countdown = document.getElementById('countdown');
+  var timer = setInterval(function() {
+    seconds--;
+    countdown.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(timer);
+      // Redirect to ME.html after countdown
+      window.location.href = "ME.html";
+    }
+  }, 1000);
+
+  // Exit button event listener
+  document.getElementById('exitButton').addEventListener('click', function() {
+    clearInterval(timer); // Stop the countdown timer
+    // Redirect to ME.html
+    window.location.href = "ME.html";
+  });
+</script>
+</body>
+</html>

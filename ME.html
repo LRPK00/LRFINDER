@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <!-- Logo -->
+        <img src="https://i.imgur.com/UJ9MNeG.png" alt="LOGO" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* CSS styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://i.imgur.com/YiF3qr6.png');
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown {
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dropdown select {
+            font-size: 16px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .website-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .website-icon {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .website-icon a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .website-icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .website-icon span {
+            display: block;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .option-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .option {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .option a {
+            display: block; /* Make the entire logo clickable */
+        }
+
+        .option img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .option h3 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .option p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Dropdown section -->
+        <div class="dropdown">
+            <label for="category">Select a Learning Area:</label>
+            <select id="category" onchange="displayWebsiteIcons()">
+                <option value="category0">Select</option>
+                <option value="category1">Filipino</option>
+                <option value="category2">English</option>
+                <option value="category3">Mathematics</option>
+                <option value="category4">Science</option>
+                <option value="category5">Araling Panlipunan</option>
+                <option value="category6">Edukasyon sa Pagpapakatao</option>
+                <option value="category7">EPP/TLE</option>
+                <option value="category8">MAPEH</option>
+                <option value="category9">Other References</option>
+            </select>
+
+            <div class="website-icons" id="website-icons"></div>
+        </div>
+
+        <!-- Option containers -->
+        <div class="option-container" id="category0">
+        <div class="option">
+            <a href="https://shorturl.at/iCEKL" target="_blank">
+            <img src="https://i.imgur.com/XTKWyus.png" alt="Website Logo">
+            </a>
+            <h3>LRMDS Finder</h3>
+            <p>The Learning Resources Management and Development System (LRMDS) is designed to support increased distribution and access to learning, teaching and professional development resources at the Region, Division and School/Cluster levels of DepED.</p>
+        </div>
+        <div class="option">
+            <a href="https://www.starbooks.ph/login" target="_blank">
+                <img src="https://i.imgur.com/SVb0x5O.png" alt="Website Logo">
+            </a>
+            <h3>DOST STARBOOKS</h3>
+            <p>Starbook is an innovative way of making science and technology information more accessible (or engaging) for Filipinos.</p>
+        </div>
+        <div class="option">
+            <a href="https://web.nlp.gov.ph/" target="_blank">
+                <img src="https://i.imgur.com/EC9T7hT.png" alt="Website Logo">
+            </a>
+            <h3>National Library of the Philippines</h3>
+            <p>The National Library of the Philippines (NLP) is the official repository of information on cultural heritage and other literary resources in the Philippines. It's  tasked with acquiring, organizing, conserving, and preserving Filipiniana resources and providing equitable access to information resources on various platforms</p>
+        </div>
+        <div class="option">
+            <a href="https://kwfwikaatkultura.ph/" target="_blank">
+                <img src="https://i.imgur.com/0iXX4ux.png" alt="Website Logo">
+            </a>
+            <h3>Repositoryo ng mga Wika at Kultura</h3>
+            <p>Starbook is an innovative way of making science and technology information more accessible (or engaging) for Filipinos.</p>
+        </div>
+        <div class="option">
+            <a href="http://www.childrenslibrary.org/" target="_blank">
+                <img src="https://i.imgur.com/cKy9rCY.png" alt="Website Logo">
+            </a>
+            <h3>International Children's Digital Library</h3>
+            <p>International Children’s Digital Library The ICDL Foundation promotes tolerance and respect for diverse cultures by providing access to the best of children's literature from around the world.</p>
+        </div>
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+
+        <div class="option">
+            <a href="https://www.letsreadasia.org/" target="_blank">
+                <img src="https://i.imgur.com/aYvGdnl.png" alt="Website Logo">
+            </a>
+            <h3>Let's Read Asia</h3>
+            <p>A digital library of the Asia Foundation with a collection of stories that highlight amazing cultures.</p>
+        </div>
+        
+        </div>
+
+        <div class="option-container" id="category1" style="display: none;">
+        <div class="option">
+            <a href="https://shorturl.at/iCEKL" target="_blank">
+            <img src="https://i.imgur.com/XTKWyus.png" alt="Website Logo">
+            </a>
+            <h3>LRMDS Finder</h3>
+            <p>The Learning Resources Management and Development System (LRMDS) is designed to support increased distribution and access to learning, teaching and professional development resources at the Region, Division and School/Cluster levels of DepED.</p>
+        </div>
+        <div class="option">
+            <a href="https://www.starbooks.ph/login" target="_blank">
+                <img src="https://i.imgur.com/SVb0x5O.png" alt="Website Logo">
+            </a>
+            <h3>DOST STARBOOKS</h3>
+            <p>Starbook is an innovative way of making science and technology information more accessible (or engaging) for Filipinos.</p>
+        </div>
+        <div class="option">
+            <a href="https://web.nlp.gov.ph/" target="_blank">
+                <img src="https://i.imgur.com/EC9T7hT.png" alt="Website Logo">
+            </a>
+            <h3>National Library of the Philippines</h3>
+            <p>The National Library of the Philippines (NLP) is the official repository of information on cultural heritage and other literary resources in the Philippines. It's  tasked with acquiring, organizing, conserving, and preserving Filipiniana resources and providing equitable access to information resources on various platforms</p>
+        </div>
+        <div class="option">
+            <a href="https://kwfwikaatkultura.ph/" target="_blank">
+                <img src="https://i.imgur.com/0iXX4ux.png" alt="Website Logo">
+            </a>
+            <h3>Repositoryo ng mga Wika at Kultura</h3>
+            <p>Starbook is an innovative way of making science and technology information more accessible (or engaging) for Filipinos.</p>
+        </div>
+        <div class="option">
+            <a href="https://www.starbooks.ph/login" target="_blank">
+                <img src="https://i.imgur.com/SVb0x5O.png" alt="Website Logo">
+            </a>
+            <h3>DOST STARBOOKS</h3>
+            <p>Starbook is an innovative way of making science and technology information more accessible (or engaging) for Filipinos.</p>
+        </div>
+        <div class="option">
+            <a href="https://www.starbooks.ph/login" target="_blank">
+                <img src="https://i.imgur.com/SVb0x5O.png" alt="Website Logo">
+            </a>
+            <h3>DOST STARBOOKS</h3>
+            <p>Starbook is an innovative way of making science and technology information more accessible (or engaging) for Filipinos.</p>
+        </div>
+        </div>
+
+        <div class="option-container" id="category3" style="display: none;">
+            <!-- Options for category 3 -->
+        </div>
+        
+        <div class="option-container" id="category4" style="display: none;">
+            <!-- Options for category 3 -->
+        </div>
+
+        <div class="option-container" id="category5" style="display: none;">
+            <!-- Options for category 3 -->
+        </div>
+
+        <div class="option-container" id="category6" style="display: none;">
+            <!-- Options for category 3 -->
+        </div>
+
+        <div class="option-container" id="category7" style="display: none;">
+            <!-- Options for category 3 -->
+        </div>
+
+        <div class="option-container" id="category8" style="display: none;">
+            <!-- Options for category 3 -->
+        </div>
+
+        <div class="option-container" id="category9" style="display: none;">
+            <!-- Options for category 3 -->
+        </div>
+        <!-- Repeat the above div structure for other categories -->
+    </div>
+
+    <script>
+        // JavaScript code
+        function displayWebsiteIcons() {
+            const websiteIcons = {
+                // Define website icons for different categories here
+            };
+
+            const categorySelect = document.getElementById('category');
+            const websiteIconsContainer = document.getElementById('website-icons');
+            websiteIconsContainer.innerHTML = '';
+
+            const selectedCategory = categorySelect.value;
+            if (selectedCategory) {
+                const icons = websiteIcons[selectedCategory];
+                icons.forEach(icon => {
+                    const websiteIcon = document.createElement('div');
+                    websiteIcon.className = 'website-icon';
+
+                    const link = document.createElement('a');
+                    link.href = icon.url;
+                    link.target = '_blank';
+
+                    const img = document.createElement('img');
+                    img.src = icon.image;
+
+                    const span = document.createElement('span');
+                    span.textContent = icon.name;
+
+                    link.appendChild(img);
+                    link.appendChild(span);
+                    websiteIcon.appendChild(link);
+                    websiteIconsContainer.appendChild(websiteIcon);
+                });
+            }
+        }
+
+        document.getElementById('category').addEventListener('change', function () {
+            var selectedCategory = this.value;
+            var optionContainers = document.querySelectorAll('.option-container');
+            optionContainers.forEach(function (container) {
+                container.style.display = 'none';
+            });
+            document.getElementById(selectedCategory).style.display = 'grid';
+        });
+    </script>
+
+    <!-- Firebase Analytics SDK -->
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD31_bGDPdLTlCJTYHuWV7E4wrOeWY0Jw4",
+        authDomain: "lr-finder.firebaseapp.com",
+        projectId: "lr-finder",
+        storageBucket: "lr-finder.appspot.com",
+        messagingSenderId: "65765507199",
+        appId: "1:65765507199:web:18c6670d658bf57b343f4a",
+        measurementId: "G-PBXML621JH"
+      };
+      var firebaseConfig = {
+            apiKey: "AIzaSyD31_bGDPdLTlCJTYHuWV7E4wrOeWY0Jw4",
+            authDomain: "lr-finder.firebaseapp.com",
+            projectId: "lr-finder",
+            storageBucket: "lr-finder.appspot.com",
+            messagingSenderId: "65765507199",
+            appId: "1:65765507199:web:18c6670d658bf57b343f4a",
+            measurementId: "G-PBXML621JH",
+            databaseURL: "https://github.com/LRPK00/LRFINDER.git"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+
+        // Track online users
+        var onlineUsersRef = database.ref('onlineUsers');
+
+        function trackOnlineUsers() {
+            // Increment online users count
+            onlineUsersRef.transaction(function (currentCount) {
+                return (currentCount || 0) + 1;
+            });
+        }
+
+        function trackOfflineUsers() {
+            // Decrement online users count
+            onlineUsersRef.transaction(function (currentCount) {
+                return (currentCount || 0) - 1;
+            });
+        }
+
+        // Track when the user accesses the page
+        window.onload = function() {
+            trackOnlineUsers();
+        };
+
+        // Track when the user leaves the page
+        window.onbeforeunload = function() {
+            trackOfflineUsers();
+        };
+
+        // Display online users count
+        onlineUsersRef.on('value', function(snapshot) {
+            var onlineUsersCount = snapshot.val();
+            document.getElementById('onlineUsersCount').innerText = onlineUsersCount;
+        });
+    </script>
+
+    <!-- Firebase SDK for Realtime Database -->
+    <script defer src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+</body>
+</html>
